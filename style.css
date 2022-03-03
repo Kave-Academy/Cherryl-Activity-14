@@ -16,6 +16,11 @@ ion-icon {
   color: white;
 }
 
+ion-icon:hover {
+  color: rgb(255, 81, 0);
+  outline-color: rgb(255, 81, 0);
+}
+
 .socmed1 {
   position: absolute;
   bottom: 38rem;
@@ -40,7 +45,7 @@ ion-icon {
   left: 2rem;
 }
 
-/* SocMed Icons */
+/* End of SocMed Icons */
 
 .parag {
   color: white;

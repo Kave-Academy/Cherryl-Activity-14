@@ -1,22 +1,14 @@
-function run(){
+
+function run() {
     let str = document.getElementById("input_argument").value;
-    let array1 = str.split('');
-    let result;
 
-    for(let x=0; x < array1.length; x++){
-        ctr =0;
-
-        for(let y = 0; y<array1.length; y++){
-            if(array1[x] === array1[y]){
-                ctr+=1;
-            }
-        } 
-        if(ctr < 2) {
-            result = array1[x];
+    for(let i = 0; i < str.length; i++){
+        if(str.indexOf(str.charAt(i)) == str.lastIndexOf(str.charAt(i))){
+            document.getElementById("output").innerHTML = (str.charAt(i));
+            break;
+        }else{
+            document.getElementById("output").innerHTML = `No repeated chracter`;
         }
+       
     }
-    document.getElementById("output").innerHTML = result;
-    
 }
-
-
